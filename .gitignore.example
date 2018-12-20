@@ -1,0 +1,6 @@
+dist
+node_modules
+.gitignore
+build/webpack.base.conf.js
+config/index.js
+package-lock.json
