@@ -29,7 +29,32 @@
                         </section>
                     </div>
                 </el-tab-pane>
-                <el-tab-pane label="功能特性／Functional ">配置管理</el-tab-pane>
+                <el-tab-pane label="功能特性／Functional ">
+                    <div class="box">
+                        <div class="items">
+                            <div class="item">
+                                <img src="../../assets/images/icon_0.png" alt="">
+                                <p class="title">开放性</p>
+                                <p>支持第三方全面开放</p>
+                            </div>
+                            <div class="item">
+                                <img src="../../assets/images/icon_1.png" alt="">
+                                <p class="title">生态性</p>
+                                <p>造政务应用良好生态</p>
+                            </div>
+                            <div class="item">
+                                <img src="../../assets/images/icon_2.png" alt="">
+                                <p class="title">平台性</p>
+                                <p>提供各类应用开发运维</p>
+                            </div>
+                        </div>
+                        <section>
+                            <p>资产云是在贯彻落实<span>创新、协调、绿色、开放、共享</span>的发展理念，加快推进“互联网+政务服务”大背景下，资产管理信息系统整合共享的有力举措，是“数字财政”的重要组成部分。</p>
+                            <p>资产云将分散的、独立的资产信息系统整合为一个<span>互联互通、业务协同、信息共享</span>的云服务，可以切实避免资产管理信息系统各自为政、自成体系、重复投资、重复建设。通过对资产云汇集的政府资产大数据的分析和利用，可以提高政府资产配置和使用效益，加快全面规范、公开透明的国有资产报告制度的建立，强化资产管理在财政管理中的基础性作用，支撑政府资产管理的创新需求。</p>
+                            <p>资产云平台服务模式推动分散独立的应用向平台间聚合的生态模式转变，促进政府公共资产的有序开放、共享使用，更好的服务于国家治理体系和治理能力的现代化。</p>
+                        </section>
+                    </div>
+                </el-tab-pane>
             </el-tabs>
         </div>
     </div>

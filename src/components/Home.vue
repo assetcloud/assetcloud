@@ -141,6 +141,7 @@
     padding:0 20px;
     box-sizing:border-box;
     background:#f37137 url("../assets/images/login.png") 30px center no-repeat;
+    cursor:pointer;
   }
   .login span{
     font-size:20px;

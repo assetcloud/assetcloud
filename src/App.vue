@@ -19,7 +19,7 @@
 				</ul>
 				</el-col>
 				<el-col :span="2" :lg="2" style="width:128px">
-				<div class="login">
+				<div class="login" @click="login()">
 					<span>登录</span>
 				</div>
 				</el-col>
@@ -35,6 +35,26 @@
 				</el-col>
 			</el-col>
 		</el-header>
+
+		<div v-show="isShow" class="loginbox">
+			<div class="login-H">
+				<div class="pw">密码登录</div>
+				<div class="sm"></div>
+			</div>
+			<el-form ref="form" :model="form">
+				<el-form-item>
+					<el-input v-model="form.name" placeholder="邮箱／会员名／ID账号"></el-input>
+				</el-form-item>
+				<el-form-item>
+					<el-input type="password" v-model="form.password" placeholder="请输入登录密码"></el-input>
+				</el-form-item>
+				<el-form-item>
+					<el-button style="width:100%;" type="primary" @click="onSubmit">登录</el-button>
+				</el-form-item>
+			</el-form>
+			<div class="wj"><a href="#">忘记密码</a><a href="#">忘记会员名</a><a href="#">免费登录</a></div>
+			<div class="other-login"><span>其他方式登录：</span><a href="#" class="tb"></a><a class="yl" href="#"></a><a class="sina" href="#"></a><a class="zfb" href="#"></a><a class="dd" href="#"></a></div>
+		</div>
 
 		<transition name="bounce">
 			<router-view></router-view>
@@ -54,6 +74,15 @@
 <script>
 export default {
   name: 'app',
+  data () {
+	  return {
+		form: {
+          name: '',
+          password:''
+		},
+		isShow:false
+	  }
+  },
   methods: {
 	handleMenu(val) {
         switch (val) {
@@ -64,7 +93,14 @@ export default {
             this.changePwd()
             break
         }
-    },  
+	}, 
+	login(){
+		this.isShow = !this.isShow
+	},
+	 onSubmit() {
+		 this.isShow = !this.isShow
+        console.log('submit!');
+      }
   },
   components: {
   }

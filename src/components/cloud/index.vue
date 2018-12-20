@@ -1,6 +1,6 @@
 <template>
-    <div class="content">
-        <el-carousel indicator-position="outside">
+    <div class="content index">
+        <el-carousel :interval="6000" indicator-position="outside">
             <el-carousel-item v-for="item in imgs" :key="item.id">
                 <div class="banner" :style="{backgroundImage: 'url(' + item.url + ')'}">
                     <div class="left">
@@ -8,7 +8,7 @@
                         <h4>{{item.h}}</h4>
                         <p v-html="item.text">{{item.text}}</p>
                         <p class="fg">我们是开放的组织，<br />我们欢迎所有富有创意和激情的团队的加入！</p>
-                        <button>加入协同</button>
+                        <button @click="link()">加入协同</button>
                     </div>
                 </div>
             </el-carousel-item>
@@ -30,19 +30,19 @@
     min-height:659px;
     position:relative;
 }
-.el-carousel__container{
+.index .el-carousel__container{
     height:calc(100vh - 130px);
     min-height:659px;
     background: #0071be;
 }
-.el-carousel__container .banner{
+.index .el-carousel__container .banner{
     width:100%;
     height:100%;
     background-position: right 100px;
     background-size:700px;
     background-repeat: no-repeat;
 }
-.el-carousel__container .banner .left{
+.index .el-carousel__container .banner .left{
     float: left;
     margin-left: 200px;
     color: #fff;
@@ -169,6 +169,9 @@ export default {
                 }
             ]
         }
+    },
+    methods: {
+        link() { this.$router.push({ path: "/coll" })},
     },
     created() {
         _g.closeGlobalLoading();

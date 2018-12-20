@@ -128,7 +128,107 @@ body{
 }
 
 
+/* 登录 */
 
+.loginbox {
+	width: 31.75rem;
+	height: 36.25rem;
+	background: rgba(255, 255, 255, 0.8);
+	border-radius: 0.5rem;
+	position: absolute;
+	top: 100px;
+	right: 100px;
+	z-index: 999999999999999;
+	padding: 2.9375rem;
+	box-sizing: border-box;
+}
+
+.loginbox div.login-H {
+	overflow: hidden;
+}
+
+.loginbox div.login-H .pw {
+	float: left;
+	font-size: 1.5rem;
+}
+.loginbox div.login-H .sm {
+	float: right;
+	width: 11.375rem;
+	height: 4rem;
+	background: url("../images/sm.png") no-repeat;
+	background-size: 11.375rem;
+}
+
+.loginbox form {
+	margin-top: 1rem;
+}
+
+.loginbox form input {
+	height: 4rem;
+	line-height: 4rem;
+	border-radius: 4rem;
+	font-size: 1.125rem;
+}
+
+.loginbox form button {
+	height: 4rem;
+	border-radius: 4rem;
+	background: #f26222;
+	border: none;
+	font-size: 1.5rem;
+}
+
+.loginbox form button:link,
+.loginbox form button:visited,
+.loginbox form button:hover,
+.loginbox form button:active {
+	background: #f26222;
+}
+
+.loginbox .wj {
+	text-align: right;
+	font-size: 1.125rem;
+}
+
+.loginbox .wj a {
+	margin-left: 1.3125rem;
+	color: #878787;
+}
+
+.loginbox .other-login {
+	padding-top: 2rem;
+	height:36px;
+	line-height:36px;
+}
+.loginbox .other-login span{
+	display:inline-block;
+	height:36px;
+	line-height:36px;
+	vertical-align: middle;
+}
+.loginbox .other-login a {
+	display:inline-block;
+	height:36px;
+	width:36px;
+	background: url('../images/login-other.png') no-repeat;
+	vertical-align: middle;
+	margin-right:10px;
+}
+.loginbox .other-login a.tb{
+	background-position: 0 0;
+}
+.loginbox .other-login a.yl {
+	background-position:-50px 0;
+}
+.loginbox .other-login a.sina {
+	background-position: -101px 0;
+}
+.loginbox .other-login a.zfb {
+	background-position: -151px 0;
+}
+.loginbox .other-login a.dd {
+	background-position: -202px 0;
+}
 /* 底部设置 */
 .footer{
 	background:#414141;
