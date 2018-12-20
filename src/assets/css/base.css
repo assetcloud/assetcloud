@@ -1,0 +1,160 @@
+html, body{
+	height:100%;
+}
+body{
+	background:#fff;
+}
+@font-face {
+	font-family: 'pfb';
+	src: url(../fonts/PingFang-Bold.ttf);
+}
+
+@font-face {
+	font-family: 'pfl';
+	src: url(../fonts/PingFang-Light.ttf);
+}
+@font-face {
+	font-family: 'pfc';
+	src: url(../fonts/PingFang.ttf);
+}
+.el-main{
+	padding:0;
+}
+.top-menu:hover {
+	cursor: pointer;
+	background: #324057;
+	/*color: #20a0ff;*/
+}
+.top-menu:active, .left-menu:active {
+	color: #20a0ff;
+}
+.top-active {
+	color: #44B5DF
+}
+.top-menu, .left-menu {
+	user-select:none;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-o-user-select:none;
+	-ms-user-select:none;
+}
+.left-menu:hover {
+	background: #42566C;
+}
+.pages {
+	position: absolute;
+	top: 20px;
+	right: -5px;
+}
+.btn-link,.btn-link-large {
+	display: inline-block;
+	line-height: 1;
+	color: #fff;
+	white-space: nowrap;
+	cursor: pointer;
+	text-align: center;
+	box-sizing: border-box;
+	margin-right: 10px;
+	padding: 7px 9px;
+	font-size: 12px;
+	border-radius: 4px;
+}
+.btn-link-large {
+	margin: 0;
+	padding: 10px 15px;
+	font-size: 14px;
+}
+.add-btn {
+	background: #4caf50
+}
+.add-btn:hover {
+	background: #66bb6a
+}
+.add-btn:active {
+	background: #43a047
+}
+.edit-btn {
+	background: #339df7
+}
+.edit-btn:hover {
+	background: #5bb1fa
+}
+.edit-btn:active {
+	background: #047ce2
+}
+/* .user-menu {
+	position: absolute;
+	top: 0px;
+	right: 100px;
+} */
+.add-btn-right {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+.table-head {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  color: #fff;
+  background: #515151
+}
+.table-head > .title {
+  color: #fff;
+  padding-left: 10px;
+}
+.table-head > .icon {
+  position: absolute;
+  font-size: 20px;
+  top: 6px;
+  right: 10px;
+  cursor: pointer;
+}
+.table-head > .table-head-btn {
+	position: absolute;
+  top: 4px;
+  right: 10px;
+}
+.table-head > .table-head-btn:last-child {
+	right: 55px;
+}
+.form-title {
+  padding-bottom: 10px;
+  font-weight: bold;
+  font-size: 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+
+
+/* 底部设置 */
+.footer{
+	background:#414141;
+	color:#c4c4c4;
+	display:flex;
+	padding:0 4.375rem;
+	line-height:70px;
+	font-size:1.3125rem;
+	font-family: "微软雅黑"
+}
+.footer div{
+	margin-left:3.75rem;
+}
+.footer .address{
+	margin-left:0;
+}
+.footer .phone{
+	padding-left:2.125rem;
+	background:url("../images/phone.png") left center no-repeat;
+	background-size:2rem;
+}
+.footer .email{
+	padding-left:2.125rem;
+	background:url("../images/email.png") left center no-repeat;
+	background-size:2rem
+}
+.footer .copyright{
+	color:#7d7d7d;
+}
